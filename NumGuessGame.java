@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /***************************************************** 
  * NUMBER GUESSING GAME
- *****************************************************
+ * ***************************************************
  * Game where the user is prompted to guess a number
  * between 1 and 100. The game randomly generates
  * a number when run and ends when it is guessed
@@ -51,7 +51,7 @@ public class NumGuessGame {
         {
             System.out.println("Higher");
         }
-        else if ( numGuess > numRand)
+        else if (numGuess > numRand)
         {
             System.out.println("Lower");
         }

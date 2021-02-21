@@ -1,6 +1,13 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/*************************************************
+ * Main
+ * ***********************************************
+ * Used to run the game as well as display the
+ * number of guesses for each round and the
+ * avverage number of guesses.
+*************************************************/
 public class Main {
     public static void main(String[] args) 
     {
@@ -22,7 +29,7 @@ public class Main {
             if (option == 1)
             {
                 NumGuessGame game = new NumGuessGame(); // Create a new game
-                game.play();                        // Play the game
+                game.play();                            // Play the game
                 numGuessList.add(game.guessCount);      // Add the guess count to the number of guesses list
                 System.out.println();
             }
@@ -42,8 +49,8 @@ public class Main {
             }
             else if (option == 3)
             {
-                int total = 0;      // Will hold the total, start at '0' for summing
-                double average = 0.0;    // Will hold the average after calculation
+                int total = 0;          // Will hold the total, start at '0' for summing
+                double average = 0.0;   // Will hold the average after calculation
 
                 // Add each value for the number of guesses and then divide
                 // the total by the number of rounds.
